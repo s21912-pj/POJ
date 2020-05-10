@@ -6,7 +6,7 @@ import java.util.*;
     Ex. 5_07
     Author: Karol Kuchnio   
  */
-public class StatisticExercise {
+public class GradesStatistics {
 
     private static List<Integer> grList = new ArrayList<Integer>();
 

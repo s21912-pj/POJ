@@ -1,6 +1,5 @@
 package com.homework;
 
-import java.awt.*;
 import java.util.Arrays;
 
 /*
@@ -40,7 +39,7 @@ public class Main {
         System.out.println("After discount"+invoice.getAmountAfterDiscount());
 
         System.out.println("//Ex 5_07");
-        StatisticExercise statisticExercise = new StatisticExercise();
+        GradesStatistics statisticExercise = new GradesStatistics();
         statisticExercise.InvokeMethod();
     }
 }
