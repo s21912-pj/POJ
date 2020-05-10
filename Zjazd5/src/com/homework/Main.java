@@ -37,7 +37,16 @@ public class Main {
         Invoice invoice = new Invoice(4,new Customer(4,"Marek",25),100);
         System.out.println("Before discount:"+ invoice.getAmount());
         System.out.println("After discount"+invoice.getAmountAfterDiscount());
-
+        System.out.println("//Ex 5_06");
+        Element oxygen = new Element("Oxygen","O",8);
+        Element hydrogenium = new Element("Hydrogenium","H",1);
+        Element potassium = new Element("Potassium","K",19);
+        Element zinc = new Element("Zinc","Zn",30);
+        Element gallium = new Element("Gallium","Ga",31);
+        Element pb = new Element("Lead","Pb",82);
+        Element flerovium = new Element("Flerovium","Fl",114);
+        ChemicalElement chemicalElement = new ChemicalElement();
+        chemicalElement.classifyElement(new Element[]{oxygen,hydrogenium,potassium,zinc,gallium,pb,flerovium});
         System.out.println("//Ex 5_07");
         GradesStatistics statisticExercise = new GradesStatistics();
         statisticExercise.InvokeMethod();
