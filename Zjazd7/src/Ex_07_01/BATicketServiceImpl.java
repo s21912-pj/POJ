@@ -15,9 +15,9 @@ public class BATicketServiceImpl implements BATicketService {
     @Override
     public List<BATicketDetails> getTicketInfo(Airport from, Airport to, LocalDateTime when) {
         Random generator = new Random();
-        int amountOfTickets = generator.nextInt((7 - 2) + 2) + 4;
+        int tickeNumber = generator.nextInt((7 - 2) + 2) + 4;
         List<BATicketDetails> result = new ArrayList<BATicketDetails>();
-        for (int i = 0; i < amountOfTickets; i++) {
+        for (int i = 0; i < tickeNumber; i++) {
             BATicketDetails ticket = new BATicketDetails();
             ticket.ticketPrice = generator.nextInt((1000 - 100) + 1) + 100;
             ticket.departureTime = when;
